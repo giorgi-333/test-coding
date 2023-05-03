@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* buttons start*/
+.buttons{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 30px;
+}
+button{
+    padding: 3px 10px 5px;
+    background-color: #28a745;
+    border-style: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .5s;
+}
+button:nth-child(2){
+    background-color: orangered !important;
+    margin-left: 5px;
+}
+button:nth-child(1):hover{
+    box-shadow: 2px 2px 8px #28a745;
+}
+button:nth-child(2):hover{
+    box-shadow: 2px 2px 8px orangered;
+}
+/* buttons end */
+
+/*counter*/
+#counter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 140px;
+    font-family: cursive;
+    font-weight: bold; 
+    text-align: center;
+    color: #333;
+    z-index: 4;
+    display: none;
+}
+/*counter*/
+
+/* mouses's place  start */
+.m_place{ 
+    position: relative;
+    width: 100%; 
+    margin-top: 90px;
+}
+.finish_line{
+  position: absolute;
+  width: 4px;
+  height: 500px;
+  background-color: rgb(126, 206, 6);
+  top: 0;
+  left: 1250px;
+  border-radius: 2px;
+  z-index: 2;
+}
+.mouse{
+    position: absolute;
+    z-index: 1;
+}
+.mouse:nth-child(1), .mouse:nth-child(2){
+    width: 150px;
+    left: 25px;
+    margin-top: 35px;
+}
+.mouse:nth-child(1){
+    top: 0px;
+}
+.mouse:nth-child(2){
+    top: 150px;
+}
+.mouse:nth-child(3){
+    top: 360px;
+    left: 25px;
+    width: 100px;
+    height: 150px;
+    transform: rotate(90deg);
+}
+#award{
+    position: absolute;
+    width: 100px;
+    margin-top: 35px;
+    left: 1256px;
+    display: none;
+    z-index: 3;
+    /* top: 190px; */
+}
+/* mouses's place  end */
